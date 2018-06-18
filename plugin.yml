@@ -1,0 +1,12 @@
+main: com.delphinadrealms.coords.Main
+name: Coords
+version: 1.0
+author: Hank
+description: Plugin desc
+commands:
+    coords:
+      description: command1 desc
+      usage: /command <args>
+    addcoords:
+      description: add new coords
+      usage: /addcoords <name> <x> <y> <z>

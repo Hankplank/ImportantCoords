@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="ImportantCoords:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ImportantCoords_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ImportantCoords.jar">
+        <element id="module-output" name="ImportantCoords" />
+        <element id="file-copy" path="$USER_HOME$/Documents/sqlite-jdbc-3.20.0.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+        <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      </element>
+    </root>
+  </artifact>
+</component>

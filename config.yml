@@ -1,0 +1,4 @@
+#default config.yml
+ctf_enabled = true
+max_player_count = 20
+min_player_count = 2
