@@ -16,7 +16,7 @@ public class CoordsCommandHandler implements CommandExecutor{
         SQLManager sql = new SQLManager();
         ArrayList<CoordsObject> coords = sql.getCoordList();
         for (CoordsObject x: coords) {
-            messageToPrint.append(x.getName() + " " + ChatColor.RED + x.getX() + " " + ChatColor.GREEN + x.getY()+ " " + ChatColor.BLUE + x.getZ() +"\n");
+            messageToPrint.append(ChatColor.WHITE + x.getName() + " " + ChatColor.RED + x.getX() + " " + ChatColor.GREEN + x.getY()+ " " + ChatColor.BLUE + x.getZ() +"\n");
         }
         sender.sendMessage(messageToPrint.toString());
         return true;
