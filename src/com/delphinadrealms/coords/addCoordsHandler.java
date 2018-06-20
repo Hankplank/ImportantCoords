@@ -1,8 +1,10 @@
 package com.delphinadrealms.coords;
 
+import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 import java.util.Scanner;
 
@@ -11,6 +13,13 @@ public class addCoordsHandler implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (args.length == 1) {
+            SQLManager sql = new SQLManager();
+            Player player = (Player)sender;
+            Location loc = player.getLocation();
+            sql.addCoords(args[0], loc.getX(), loc.getY(), loc.getZ());
+            return true;
+        }
         if (args.length < 4 || args.length > 4) {
             sender.sendMessage("Please include a name, x coord, y coord, and z coord");
             return false;

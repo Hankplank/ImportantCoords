@@ -68,7 +68,7 @@ public class SQLManager {
                 ResultSet results = getCoordsStatement.executeQuery(getCoords);
                 ArrayList<CoordsObject> coordsList = new ArrayList<>();
                 while (results.next()) {
-                    coordsList.add(new CoordsObject(results.getString("coordName"), results.getDouble("coordX"),results.getDouble("coordY"), results.getDouble("coordZ") ));
+                    coordsList.add(new CoordsObject(results.getString("coordName"), results.getDouble("coordX"),results.getDouble("coordY"), results.getDouble("coordZ")));
                 }
                 return coordsList;
             } catch (SQLException e) {
