@@ -10,3 +10,6 @@ commands:
     addcoords:
       description: add new coords
       usage: /addcoords <name> <x> <y> <z>
+    delcoords:
+      description: remove coords
+      usage: /delcoords <name>

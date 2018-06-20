@@ -15,6 +15,7 @@ public class Main extends JavaPlugin {
         sql.setup();
         this.getCommand("coords").setExecutor(new CoordsCommandHandler());
         this.getCommand("addcoords").setExecutor(new addCoordsHandler());
+        this.getCommand("delcoords").setExecutor(new handleCoordsDelete());
         instance = this;
     }
 
