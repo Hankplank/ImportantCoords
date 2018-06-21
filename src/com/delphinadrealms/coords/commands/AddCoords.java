@@ -1,5 +1,6 @@
-package com.delphinadrealms.coords;
+package com.delphinadrealms.coords.commands;
 
+import com.delphinadrealms.coords.objects.SQLManager;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,7 +9,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Scanner;
 
-public class addCoordsHandler implements CommandExecutor {
+public class AddCoords implements CommandExecutor {
 
 
     @Override

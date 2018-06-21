@@ -1,4 +1,4 @@
-package com.delphinadrealms.coords;
+package com.delphinadrealms.coords.objects;
 
 public class CoordsObject {
 

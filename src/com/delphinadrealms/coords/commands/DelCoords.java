@@ -1,11 +1,12 @@
-package com.delphinadrealms.coords;
+package com.delphinadrealms.coords.commands;
 
+import com.delphinadrealms.coords.objects.SQLManager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class handleCoordsDelete implements CommandExecutor {
+public class DelCoords implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (args.length <1) {

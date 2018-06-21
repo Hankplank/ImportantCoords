@@ -1,5 +1,7 @@
-package com.delphinadrealms.coords;
+package com.delphinadrealms.coords.commands;
 
+import com.delphinadrealms.coords.objects.CoordsObject;
+import com.delphinadrealms.coords.objects.SQLManager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -7,7 +9,7 @@ import org.bukkit.command.CommandSender;
 
 import java.util.ArrayList;
 
-public class CoordsCommandHandler implements CommandExecutor {
+public class Coords implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
