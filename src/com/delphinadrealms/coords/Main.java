@@ -3,6 +3,7 @@ package com.delphinadrealms.coords;
 import com.delphinadrealms.coords.commands.Coords;
 import com.delphinadrealms.coords.commands.AddCoords;
 import com.delphinadrealms.coords.commands.DelCoords;
+import com.delphinadrealms.coords.commands.SayCoords;
 import com.delphinadrealms.coords.objects.SQLManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +19,7 @@ public class Main extends JavaPlugin {
         this.getCommand("coords").setExecutor(new Coords());
         this.getCommand("addcoords").setExecutor(new AddCoords());
         this.getCommand("delcoords").setExecutor(new DelCoords());
+        this.getCommand("saycoords").setExecutor(new SayCoords());
         instance = this;
     }
 
