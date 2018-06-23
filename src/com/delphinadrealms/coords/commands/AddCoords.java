@@ -18,7 +18,7 @@ public class AddCoords implements CommandExecutor {
             SQLManager sql = new SQLManager();
             Player player = (Player)sender;
             Location loc = player.getLocation();
-            sql.addCoords(args[0], loc.getX(), loc.getY(), loc.getZ());
+            sql.addCoords(args[0], Math.floor(loc.getX()), Math.floor(loc.getY()), Math.floor(loc.getZ()));
             return true;
         }
         if (args.length < 4 || args.length > 4) {

@@ -15,7 +15,7 @@ public class SayCoords implements CommandExecutor {
         if (sender instanceof Player) {
             Location playersLocation = ((Player) sender).getLocation();
             for (Player player: Main.getInstance().getServer().getOnlinePlayers()) {
-                player.sendMessage(((Player) sender).getDisplayName() + " has the coordinates of: " + ChatColor.RED + playersLocation.getX() + " " + ChatColor.GREEN + playersLocation.getY() + " " + ChatColor.BLUE + playersLocation.getZ());
+                player.sendMessage(((Player) sender).getDisplayName() + " has the coordinates of: " + ChatColor.RED + Math.floor(playersLocation.getX()) + " " + ChatColor.GREEN + Math.floor(playersLocation.getY()) + " " + ChatColor.BLUE + Math.floor(playersLocation.getZ()));
             }
             return true;
         } else {
