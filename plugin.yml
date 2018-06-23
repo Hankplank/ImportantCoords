@@ -13,3 +13,6 @@ commands:
     delcoords:
       description: remove coords
       usage: /delcoords <name>
+    saycoords:
+      description: say coords in chat
+      usage: /saycoords
